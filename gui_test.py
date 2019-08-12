@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 window = Tk()
 
-window.title("GFL Max Stats Comparator")
+window.title("GFL Max Stats Comparator/Look up")
 window.geometry('360x300')
 
 lbl = Label(window, text="Please enter names of two T-dolls.", font=("Arial Bold", 12))
