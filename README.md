@@ -1,11 +1,10 @@
-# GFL-max-stats-lookup-and-compare
+# Gfl-max-stats-lookup-and-compare
 
 A simple tool that makes comparing and looking up T-dolls' max stats easier.
 
     
 ## Why tho?
-I'm tiring of repeatly pressing ctrl-f while using gfwiki and my eyes hurt.
-
+I'm tired of repeatedly pressing ctrl-f while using gfwiki and my eyes hurt.
 
 ## How does it work?
 Data is scraped from Girls' Frontline Wiki with BeautifulSoup.
