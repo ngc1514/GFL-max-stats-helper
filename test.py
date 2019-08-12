@@ -11,17 +11,10 @@ from bs4 import BeautifulSoup
 
 def compare(str_type, first, second):
     result = []
-    site = ""
-    if str_type.upper() == "HG":
-        site = "https://en.gfwiki.com/wiki/List_of_HG_by_Maximum_Stats"
-    elif str_type.upper() == "SMG":
-        site = "https://en.gfwiki.com/wiki/List_of_SMG_by_Maximum_Stats"
-    elif str_type.upper() == "RF":
-        site = "https://en.gfwiki.com/wiki/List_of_RF_by_Maximum_Stats"
-    elif str_type.upper() == "AR":
-        site = "https://en.gfwiki.com/wiki/List_of_AR_by_Maximum_Stats"
+    site = "https://en.gfwiki.com/wiki/List_of_" + str_type.strip().upper() + "_by_Maximum_Stats"
 
-    # gflwiki checks for user agent otherwise you'll get 403
+
+# gflwiki checks for user agent otherwise you'll get 403
     hdr = {'User-Agent': 'Mozilla/5.0'}
     req = Request(site, headers=hdr)
     page = urlopen(req)
