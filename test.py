@@ -37,14 +37,14 @@ def compare(str_type, first, second):
                            td_list[4].text.strip('\n'),
                            td_list[5].text.strip('\n'),
                            td_list[6].text.strip('\n')])
-            # print("T-doll name: " + td_list[1].text +
-            #       "Index: " + td_list[0].text +
-            #       "Max Dmg: " + td_list[2].text +
-            #       "Max EVA: " + td_list[3].text +
-            #       "Max ACC: " + td_list[4].text +
-            #       "Max ROF: " + td_list[5].text +
-            #       "Max HP: " + td_list[6].text +
-            #       "\n")
+            print("T-doll name: " + td_list[1].text +
+                  "Index: " + td_list[0].text +
+                  "Max Dmg: " + td_list[2].text +
+                  "Max EVA: " + td_list[3].text +
+                  "Max ACC: " + td_list[4].text +
+                  "Max ROF: " + td_list[5].text +
+                  "Max HP: " + td_list[6].text +
+                  "\n")
     for doll in result:
         print(doll)
         print()

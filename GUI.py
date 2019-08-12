@@ -26,12 +26,12 @@ second_txt = Entry(window,width=15)
 second_txt.grid(column=1, row=3)
 
 # listboxs to display results
-listbox = Listbox(window)
+listbox1 = Listbox(window)
 listbox2 = Listbox(window)
 
 
 def compare():
-    listbox.delete(0, END)
+    listbox1.delete(0, END)
     listbox2.delete(0, END)
     result = []
     site = "https://en.gfwiki.com/wiki/List_of_" + type_txt.get().strip().upper() + "_by_Maximum_Stats"
@@ -59,33 +59,32 @@ def compare():
                            "Max ACC: " + td_list[4].text.strip('\n'),
                            "Max ROF: " + td_list[5].text.strip('\n'),
                            "Max HP: " + td_list[6].text.strip('\n')])
-            print("T-doll name: " + td_list[1].text +
-                  "Index: " + td_list[0].text +
-                  "Max Dmg: " + td_list[2].text +
-                  "Max EVA: " + td_list[3].text +
-                  "Max ACC: " + td_list[4].text +
-                  "Max ROF: " + td_list[5].text +
-                  "Max HP: " + td_list[6].text +
-                  "\n")
     for doll in result:
         temp_count = 1
         for data in doll:
             if result.index(doll) == 0:
-                print("test index: " + str(result.index(doll)))
-                listbox.insert(temp_count, data)
+                listbox1.insert(temp_count, data)
                 temp_count += 1
             else:
                 listbox2.insert(temp_count, data)
                 temp_count += 1
-        print(doll)
-        print()
 
 
 btn = Button(window, text="Search", command=compare)
 btn.grid(column=0, row=4)
-listbox.grid(column=0, row=5)
-listbox.configure(width=30)
+listbox1.grid(column=0, row=5)
+listbox1.configure(width=30)
 listbox2.grid(column=1, row=5)
 listbox2.configure(width=30)
 
 window.mainloop()
+
+
+# print("T-doll name: " + td_list[1].text +
+#       "Index: " + td_list[0].text +
+#       "Max Dmg: " + td_list[2].text +
+#       "Max EVA: " + td_list[3].text +
+#       "Max ACC: " + td_list[4].text +
+#       "Max ROF: " + td_list[5].text +
+#       "Max HP: " + td_list[6].text +
+#       "\n")
