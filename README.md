@@ -1,10 +1,11 @@
-# GirlsFrontline-max-stats-comparator
+# GFL-max-stats-lookup-and-compare
 
-A tool that compares T-dolls' max stats.
+A simple tool that makes comparing and looking up T-dolls' max stats easier.
 
-Can also be used to look up T-dolls max stats.
+    
+## Why tho?
+I'm tiring of repeatly pressing ctrl-f while using gfwiki and my eyes hurt.
 
-Data is scraped from gfwiki.
 
->Functional for now but kinda shabby.
-## Currently in development. Expect to be completed in 10 years cuz I'm a lazy ass.
+## How does it work?
+Data is scraped from Girls' Frontline Wiki with BeautifulSoup.
