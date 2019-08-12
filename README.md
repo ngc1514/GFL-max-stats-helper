@@ -2,6 +2,8 @@
 
 A tool that compares T-dolls' max stats.
 
+Can also be used to look up T-dolls max stats.
+
 Data is scraped from gfwiki.
 
 
