@@ -1,10 +1,3 @@
-'''
-    Title format is:
-    <td>
-        <a href="/wiki/MP41" title="MP41">MP41</a>
-    </td>
-'''
-
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 
@@ -45,9 +38,11 @@ def compare(str_type, first, second):
                   "Max ROF: " + td_list[5].text +
                   "Max HP: " + td_list[6].text +
                   "\n")
-    for doll in result:
-        print(doll)
-        print()
+    # debug print
+    # for doll in result:
+    #     print(doll)
+    #     print()
+
 
 # prompt for input
 type_txt = "SMG"
