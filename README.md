@@ -8,3 +8,6 @@ I'm tired of repeatedly pressing ctrl-f while using gfwiki and my eyes hurt.
 
 ## How does it work?
 Data is scraped from Girls' Frontline Wiki with BeautifulSoup.
+
+## How to use?
+Console or GUI, you pick one.
