@@ -18,11 +18,11 @@ lbl_second = Label(window, text="Second: ", font=("Arial Bold", 12))
 lbl_second.grid(column=0, row=3)
 
 # text area
-type_txt = Entry(window,width=15)
+type_txt = Entry(window, width=15)
 type_txt.grid(column=1, row=1)
-first_txt = Entry(window,width=15)
+first_txt = Entry(window, width=15)
 first_txt.grid(column=1, row=2)
-second_txt = Entry(window,width=15)
+second_txt = Entry(window, width=15)
 second_txt.grid(column=1, row=3)
 
 # listboxs to display results
@@ -77,6 +77,7 @@ listbox1.configure(width=30)
 listbox2.grid(column=1, row=5)
 listbox2.configure(width=30)
 
+window.resizable(0, 0)
 window.mainloop()
 
 
