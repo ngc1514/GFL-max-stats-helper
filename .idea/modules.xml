@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GirlsFrontline-max-stats-comparator.iml" filepath="$PROJECT_DIR$/GirlsFrontline-max-stats-comparator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GirlsFrontline-max-stats-helper.iml" filepath="$PROJECT_DIR$/GirlsFrontline-max-stats-helper.iml" />
     </modules>
   </component>
 </project>
