@@ -44,7 +44,7 @@ def compare(str_type, first, second):
 
 
 # prompt for input
-type_txt = "SMG"
+t_doll_type = input("T-doll type (HG, SMG, AR, RF). Doesn't matter upper case or lower.\n")
 first_pmt = input("First t-doll name.\n")
 second_pmt = input("T-doll to compare. (Leave it empty if only want to look up the previous one)\n")
-compare(type_txt, first_pmt, second_pmt)
+compare(t_doll_type, first_pmt, second_pmt)
