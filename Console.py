@@ -6,8 +6,7 @@ def compare(str_type, first, second):
     result = []
     site = "https://en.gfwiki.com/wiki/List_of_" + str_type.strip().upper() + "_by_Maximum_Stats"
 
-
-# gflwiki checks for user agent otherwise you'll get 403
+    # gflwiki checks for user agent otherwise you'll get 403
     hdr = {'User-Agent': 'Mozilla/5.0'}
     req = Request(site, headers=hdr)
     page = urlopen(req)
@@ -21,8 +20,8 @@ def compare(str_type, first, second):
 
     for tr in iter_tr_list:
         td_list = tr.find_all("td")
-        hredLst = td_list[1].find("a")
-        if first.lower() == hredLst.attrs['title'].lower() or second == hredLst.attrs['title'].lower():
+        href_list = td_list[1].find("a")
+        if first.lower() == href_list.attrs['title'].lower() or second == href_list.attrs['title'].lower():
             result.append([td_list[1].text.strip('\n'),
                            td_list[0].text.strip('\n'),
                            td_list[2].text.strip('\n'),
@@ -46,8 +45,6 @@ def compare(str_type, first, second):
 
 # prompt for input
 type_txt = "SMG"
-first = input("First t-doll name.\n")
-second = input("T-doll to compare.\n")
-compare(type_txt, first, second)
-
-
+first_pmt = input("First t-doll name.\n")
+second_pmt = input("T-doll to compare. (Leave it empty if only want to look up the previous one)\n")
+compare(type_txt, first_pmt, second_pmt)
