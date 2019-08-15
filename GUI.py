@@ -70,6 +70,7 @@ def compare():
                 temp_count += 1
 
 
+window.bind('<Return>', (lambda event: compare()))
 btn = Button(window, text="Search", command=compare)
 btn.grid(column=0, row=4)
 listbox1.grid(column=0, row=5)
