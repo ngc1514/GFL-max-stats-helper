@@ -10,7 +10,7 @@ window.geometry('435x310')
 # labels
 lbl = Label(window, text="Enter the name(s) of T-doll(s).", font=("Arial Bold", 12))
 lbl.grid(column=0, row=0)
-lbl_type = Label(window, text="Type(HG, SMG, RF, AR): ", font=("Arial Bold", 12))
+lbl_type = Label(window, text="Type(HG, SMG, RF, AR, MG): ", font=("Arial Bold", 12))
 lbl_type.grid(column=0, row=1)
 lbl_first = Label(window, text="First: ", font=("Arial Bold", 12))
 lbl_first.grid(column=0, row=2)
