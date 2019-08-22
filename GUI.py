@@ -28,6 +28,10 @@ second_txt.grid(column=1, row=3)
 # listboxs to display results
 listbox1 = Listbox(window)
 listbox2 = Listbox(window)
+listbox1.grid(column=0, row=5)
+listbox1.configure(width=30)
+listbox2.grid(column=1, row=5)
+listbox2.configure(width=30)
 
 
 def compare():
@@ -70,14 +74,24 @@ def compare():
                 temp_count += 1
 
 
-window.bind('<Return>', (lambda event: compare()))
-btn = Button(window, text="Search", command=compare)
-btn.grid(column=0, row=4)
-listbox1.grid(column=0, row=5)
-listbox1.configure(width=30)
-listbox2.grid(column=1, row=5)
-listbox2.configure(width=30)
+def clear_text():
+    type_txt.delete(0, END)
+    first_txt.delete(0, END)
+    second_txt.delete(0, END)
+    listbox1.delete(0, END)
+    listbox2.delete(0, END)
 
+
+# Bind compare() with return key
+window.bind('<Return>', (lambda event: compare()))
+
+# Add search and clear buttons
+search_btn = Button(window, text="Search", command=compare)
+search_btn.grid(column=1, row=4)
+clear_btn = Button(window, text="Clear", command=clear_text)
+clear_btn.grid(column=0, row=4)
+
+# Window non-resizable
 window.resizable(0, 0)
 window.mainloop()
 
