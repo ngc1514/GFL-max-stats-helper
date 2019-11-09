@@ -16,3 +16,6 @@ Console or GUI, you pick one. I recommend using the GUI for a more user-friendly
     apt-get install python3-tk
     pip3 install beautifulsoup4
 ```
+
+## Future idea
+Who doens't like a web app? Might put it on my website, if I can survive sophomore year and get my lazy ass up and code..
