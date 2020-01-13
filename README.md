@@ -18,4 +18,4 @@ Console or GUI, you pick one. I recommend using the GUI for a more user-friendly
 ```
 
 ## Future idea
-Who doens't like a web app? Might put it on my website, if I can survive sophomore year and get my lazy ass up and code..
+Will probably make a webapp
