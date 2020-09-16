@@ -1,6 +1,6 @@
 # Gfl-max-stats-lookup-and-compare
 
-A simple tool that makes comparing and looking up T-dolls' max stats easier.
+A simple tool that makes comparing and looking up T-dolls' max stats easier. (Meta is overrated. Please give love to your two-star raifu.)
 
 ## Why tho?
 I'm tired of repeatedly pressing ctrl-f while using gfwiki and my eyes hurt.
